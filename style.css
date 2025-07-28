@@ -1,0 +1,186 @@
+/* General Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Selection Panels */
+.selection-panel {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.selection-panel h2 {
+    margin-top: 0;
+    color: #34495e;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+#categories button, #clothing-types button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#categories button:hover, #clothing-types button:hover {
+    background-color: #2980b9;
+}
+
+/* Items Grid */
+#items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.item-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fdfdfd;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.item-card h3 {
+    margin: 0.5rem 0;
+}
+
+.item-card .price {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.item-card input[type="number"] {
+    width: 60px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.item-card .add-to-cart-btn {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.item-card .add-to-cart-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Cart */
+#cart-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#cart-count {
+    background-color: white;
+    color: #e74c3c;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cart-items {
+    margin-bottom: 20px;
+}
+
+#cart-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#place-order-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+}

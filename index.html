@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Apparel Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>E-commerce Website 🛍️</h1>
+        <div id="cart-button">
+            Cart <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="selection-panel">
+            <h2>1. Select a Category</h2>
+            <div id="categories">
+                <button class="category-btn" data-category="men">Men</button>
+                <button class="category-btn" data-category="women">Women</button>
+                <button class="category-btn" data-category="kids">Kids</button>
+            </div>
+        </div>
+
+        <div class="selection-panel" id="clothing-type-panel" style="display:none;">
+            <h2>2. Select Clothing Type</h2>
+            <div id="clothing-types">
+                </div>
+        </div>
+        
+        <div class="selection-panel" id="items-panel" style="display:none;">
+            <h2>3. Choose Your Items</h2>
+            <div id="items-grid">
+                </div>
+        </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="place-order-btn">Place Order</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
